@@ -1,0 +1,149 @@
+
+
+body {
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.grid {
+
+    display: grid;
+    width: 600px;
+    height: 600px;
+    border: solid;
+    grid-template-columns: 200px 200px 200px;
+    border-radius: 10px;
+
+}
+
+
+.cell {
+
+    border: solid;
+    background-size: cover;
+    background-color:beige;
+    background-image: none;
+    transition: background-color 0.4s;
+
+}
+
+.cell:hover {
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.features {
+    
+    margin-left: 100px;
+    border: solid;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    padding: 20px 20px;
+    width: 200px;
+    
+}
+
+.turn {
+
+    margin-bottom: 15px;
+
+}
+
+.reset {
+
+    margin-top: 15px;
+    color: white;
+    background-color: black;
+    border: none;
+    width: 50%;
+    min-width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    transition: opacity 0.2s;
+    margin-bottom: 10px;
+
+}
+
+.score-contain {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-bottom: solid;
+    border-top: solid;
+    padding: 10px 10px;
+
+}
+
+.reset:hover {
+    opacity: 0.8;
+}
+
+.reset:active {
+    opacity: 0.6;
+}
+
+.popup {
+
+    position: fixed;
+    top : 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 300px;
+    text-align: justify;
+    font-size: 40px;
+    border: solid;
+    padding: 10px 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.closer {
+    margin-top: 10px;
+}
+
+.popup-active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.overlay {
+
+    position: fixed;
+    transform: scale(0);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+
+.overlay-active {
+
+    transform: scale(1);
+
+}

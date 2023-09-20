@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1 class="title">Tic-Tac-Toe</h1>
+
+
+    <div class="popup"> </div>
+
+
+    <div class="container">
+
+        <div class="grid">
+
+            <div class="cell" id="c0" onclick="show(0)"></div>
+            <div class="cell" id="c1" onclick="show(1)"></div>
+            <div class="cell" id="c2" onclick="show(2)"></div>
+            <div class="cell" id="c3" onclick="show(3)"></div>
+            <div class="cell" id="c4" onclick="show(4)"></div>
+            <div class="cell" id="c5" onclick="show(5)"></div>
+            <div class="cell" id="c6" onclick="show(6)"></div>
+            <div class="cell" id="c7" onclick="show(7)"></div>
+            <div class="cell" id="c8" onclick="show(8)"></div>
+
+
+        </div>
+
+        <div class="features">
+
+            <div class="turn">Turn : &#10006;</div>
+            <div class="score-contain">
+                <div class="cross-score">&#10006; : 0</div>
+                <div class="circle-score">&#9711; : 0</div>
+            </div>
+            <button class="reset" onclick="reset()"> reset score </button>
+            
+        </div>
+
+    </div>
+
+    <div class="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
